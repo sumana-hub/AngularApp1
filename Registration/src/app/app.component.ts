@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { ConservationModule } from "./conservationArea/conservation.module";
 
 @Component({
-  selector: 'app-root',
+  selector: 'app',
   standalone: true,
-  imports: [],
+  imports: [ConservationModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
