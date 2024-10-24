@@ -2,7 +2,7 @@ import { Injectable } from "@angular/core";
 import { Reservation } from "./reservation.model";
 import { Observable, from } from "rxjs";
 
-@Injectable()
+@Injectable({providedIn: 'root'})
 export class StaticDataSource {
   private reservations: Reservation[] = [
     new Reservation(1, "timeslot 1", "area 1", "timeslot 1 (area 1)", 100),
