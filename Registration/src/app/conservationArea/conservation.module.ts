@@ -3,9 +3,10 @@ import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule } from "@angular/forms";
 import { ModelModule } from "../model/model.module";
 import { ConservationComponent } from "./conservation.component";
+import { CommonModule } from "@angular/common";
 
 @NgModule({
-  imports: [ModelModule, BrowserModule, FormsModule],
+  imports: [ModelModule, CommonModule, FormsModule],
   declarations: [ConservationComponent],
   exports: [ConservationComponent]
 })
